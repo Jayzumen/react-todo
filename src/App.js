@@ -60,12 +60,12 @@ function App() {
       </div>
 
       <h2 className='text-2xl my-6'>List of Todos:</h2>
-      <div className='w-fit mx-auto grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 px-12 sm:p-0'>
+      <div className='w-fit mx-auto grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-6 px-12 sm:p-0'>
         {todos.map((todo) => (
           <div
             key={todo.id}
-            className='rounded-full shadow-sm shadow-slate-800 bg-cyan-700 px-2 mx-2 min-w-[300px]'>
-            <p className='text-xl my-4 w-fit mx-auto'>{todo.text}</p>
+            className='rounded-full shadow-sm shadow-slate-800 bg-cyan-500 px-2 mx-2 min-w-[300px]'>
+            <p className='text-xl my-4 w-[75%] mx-auto overflow-x-hidden'>{todo.text}</p>
             <div className='my-2 w-fit mx-auto'>
               <button
                 onClick={() => deleteTodo(todo.id)}
